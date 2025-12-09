@@ -1,4 +1,4 @@
-baseURL = 'https://igormihajlov.com/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Igor Mihajlov'
 theme = 'terminal'
