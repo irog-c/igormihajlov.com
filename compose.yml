@@ -1,0 +1,9 @@
+services:
+  web:
+    image: ghcr.io/irog-c/igormihajlov.com:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 1
+      update_config:
+        order: start-first
