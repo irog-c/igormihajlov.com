@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://igormihajlov.com/'
 languageCode = 'en-us'
 title = 'Igor Mihajlov'
 theme = 'terminal'
@@ -12,9 +12,9 @@ pagination.pagerSize = 5
 
 [languages]
     [languages.en]
-        title = 'Igors personal website [WIP]'
-        subtitle = ''
-        keywords = ''
+        title = 'Igor Mihajlov'
+        subtitle = 'Backend Engineer based in Belgrade, specializing in Go, distributed systems, and cloud infrastructure.'
+        keywords = 'backend engineer, go, golang, microservices, distributed systems, software engineer, Belgrade, Serbia'
         copyright = ''
         menuMore = 'Show more'
         readMore = 'Read more'
