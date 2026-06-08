@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Igor Mihajlov'
 theme = 'terminal'
 pagination.pagerSize = 5
+enableRobotsTXT = true
 
 [params]
     contentTypeName = 'home'
@@ -13,7 +14,7 @@ pagination.pagerSize = 5
 [languages]
     [languages.en]
         title = 'Igor Mihajlov'
-        subtitle = 'Backend Engineer based in Belgrade, specializing in Go, distributed systems, and cloud infrastructure.'
+        subtitle = 'Backend Engineer based in Belgrade, Serbia. Specializing in Go, TypeScript, distributed systems, microservices, and cloud infrastructure.'
         keywords = 'backend engineer, go, golang, microservices, distributed systems, software engineer, Belgrade, Serbia'
         copyright = ''
         menuMore = 'Show more'
