@@ -14,10 +14,8 @@
 {{ template "_internal/google_analytics.html" . }}
 
 {{ $css := resources.Match "css/*.css" }}
-{{ range $css }}
-  {{ $styles := . | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}">
-{{ end }}
+{{ $bundle := $css | resources.Concat "css/bundle.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $bundle.Permalink }}">
 <!-- Custom Terminal.css styles -->
 {{ if (fileExists "static/terminal.css") -}}
   <link rel="stylesheet" href="{{ "terminal.css" | absURL }}">
