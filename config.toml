@@ -14,12 +14,14 @@ enableRobotsTXT = true
 [languages]
     [languages.en]
         title = 'Igor Mihajlov'
-        subtitle = 'Backend Engineer based in Belgrade, Serbia. Specializing in Go, TypeScript, distributed systems, microservices, and cloud infrastructure.'
-        keywords = 'backend engineer, go, golang, microservices, distributed systems, software engineer, Belgrade, Serbia'
         copyright = ''
         menuMore = 'Show more'
         readMore = 'Read more'
         readOtherPosts = 'Read other posts'
+
+    [languages.en.params]
+        subtitle = 'Backend Engineer based in Belgrade, Serbia. Specializing in Go, TypeScript, distributed systems, microservices, and cloud infrastructure.'
+        keywords = 'backend engineer, go, golang, microservices, distributed systems, software engineer, Belgrade, Serbia'
 
     [languages.en.params.logo]
         logoText = 'IGOR MIHAJLOV'
