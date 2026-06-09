@@ -28,7 +28,7 @@
 | jsonify | safeJS -}}
 </script>
 
-{{- else if and .IsPage (eq .File.BaseFileName "about") -}}
+{{- else if and .IsPage .File (eq .File.BaseFileName "about") -}}
 <script type="application/ld+json">
 {{- dict
   "@context" "https://schema.org"

@@ -20,10 +20,9 @@
 {{ if (fileExists "static/terminal.css") -}}
   <link rel="stylesheet" href="{{ "terminal.css" | absURL }}">
 {{- end }}
-<!-- Custom CSS to override theme properties (/static/style.css) -->
-{{ if (fileExists "static/style.css") -}}
-  <link rel="stylesheet" href="{{ "style.css" | absURL }}">
-{{- end }}
+<!-- Custom CSS to override theme properties -->
+{{ $customCSS := resources.Get "style.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $customCSS.Permalink }}">
 
 <!-- Icons -->
 <link rel="shortcut icon" href="{{ "favicon.png" | absURL }}">
