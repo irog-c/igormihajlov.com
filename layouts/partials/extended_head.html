@@ -1,0 +1,67 @@
+{{- $siteURL := .Site.BaseURL -}}
+{{- $siteName := .Site.Title -}}
+{{- $authorName := "Igor Mihajlov" -}}
+{{- $authorURL := $siteURL -}}
+
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{{- dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" $siteName
+  "url" $siteURL
+| jsonify | safeJS -}}
+</script>
+<script type="application/ld+json">
+{{- dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $authorName
+  "url" $authorURL
+  "jobTitle" "Backend Engineer"
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Belgrade" "addressCountry" "RS")
+  "sameAs" (slice
+    "https://linkedin.com/in/igor-mihajlov"
+    "https://github.com/irog-c"
+    "https://codeforces.com/profile/irog15"
+  )
+| jsonify | safeJS -}}
+</script>
+
+{{- else if and .IsPage (eq .File.BaseFileName "about") -}}
+<script type="application/ld+json">
+{{- dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $authorName
+  "url" $authorURL
+  "jobTitle" "Backend Engineer"
+  "description" (.Description | default "")
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Belgrade" "addressCountry" "RS")
+  "sameAs" (slice
+    "https://linkedin.com/in/igor-mihajlov"
+    "https://github.com/irog-c"
+    "https://codeforces.com/profile/irog15"
+  )
+| jsonify | safeJS -}}
+</script>
+
+{{- else if and .IsPage (eq .Section "posts") -}}
+{{- $image := printf "%sog-image.png" $siteURL -}}
+{{- with .Params.cover }}{{ $image = printf "%s%s" $siteURL . }}{{ end -}}
+<script type="application/ld+json">
+{{- dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" (.Description | default (.Summary | plainify))
+  "url" .Permalink
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "author" (dict "@type" "Person" "name" $authorName "url" $authorURL)
+  "publisher" (dict "@type" "Person" "name" $authorName "url" $authorURL)
+  "image" $image
+  "keywords" (delimit (.Params.keywords | default slice) ", ")
+| jsonify | safeJS -}}
+</script>
+{{- end -}}
