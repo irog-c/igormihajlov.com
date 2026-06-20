@@ -185,9 +185,12 @@ server {
         proxy_pass http://host.docker.internal:81;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_redirect http:// https://;
     }
 }
 ```
+
+The `proxy_redirect http:// https://;` line is important. The Hugo container only speaks HTTP internally, so when nginx inside it issues a redirect — for example, to add a trailing slash to a URL — it produces an `http://` location header. Without this directive, that leaks out to the client, causing a two-hop redirect chain: the client first follows the `http://` URL, then gets bounced to `https://` by the first server block. This is what triggers redirect errors in Google Search Console.
 
 Since the reverse proxy runs in Docker, it can't reach `localhost` on the host. The `host.docker.internal` hostname solves this — add it to your reverse proxy's compose file:
 
@@ -257,6 +260,10 @@ baseURL = "https://mysite.com/"
 ### Container can't reach host services
 
 Use `host.docker.internal` instead of `localhost` and add the `extra_hosts` mapping to your compose file.
+
+### Redirect errors in Google Search Console
+
+If Search Console reports redirect errors, the likely cause is the Hugo container issuing `http://` location headers for trailing-slash redirects. The `proxy_redirect http:// https://;` directive in the reverse proxy rewrites those to `https://` before they reach the client, collapsing the redirect chain.
 
 ## The Result
 
