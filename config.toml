@@ -8,6 +8,7 @@ enableGitInfo = true
 
 [markup.highlight]
   lineNos = true
+  lineNumbersInTable = false
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -17,6 +18,7 @@ enableGitInfo = true
     showMenuItems = 4
     fullWidthTheme = false
     centerTheme = true
+    readMore = 'Read more'
 
 [languages]
     [languages.en]
