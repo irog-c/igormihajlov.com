@@ -9,6 +9,7 @@ enableGitInfo = true
 [markup.highlight]
   lineNos = true
   lineNumbersInTable = false
+  noClasses = false
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -19,6 +20,9 @@ enableGitInfo = true
     fullWidthTheme = false
     centerTheme = true
     readMore = 'Read more'
+    showLastUpdated = true
+    Toc = true
+    readingTime = true
 
 [languages]
     [languages.en]
