@@ -24,6 +24,10 @@
 {{ $customCSS := resources.Get "style.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $customCSS.Permalink }}">
 
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/FiraCode-Latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/FiraCode-LatinExt.woff2" as="font" type="font/woff2" crossorigin>
+
 <!-- Icons -->
 <link rel="shortcut icon" href="{{ "favicon.png" | absURL }}">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
