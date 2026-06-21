@@ -4,6 +4,13 @@ title = 'Igor Mihajlov'
 theme = 'terminal'
 pagination.pagerSize = 5
 enableRobotsTXT = true
+enableGitInfo = true
+
+[markup.highlight]
+  lineNos = true
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [params]
     contentTypeName = 'home'
