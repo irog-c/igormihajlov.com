@@ -1,6 +1,6 @@
 baseURL = 'https://igormihajlov.com/'
 languageCode = 'en-us'
-title = 'Igor Mihajlov'
+title = 'Igor Mihajlov — Backend Engineer | Go · TypeScript · Distributed Systems'
 theme = 'terminal'
 pagination.pagerSize = 5
 enableRobotsTXT = true
@@ -26,7 +26,7 @@ enableGitInfo = true
 
 [languages]
     [languages.en]
-        title = 'Igor Mihajlov'
+        title = 'Igor Mihajlov — Backend Engineer | Go · TypeScript · Distributed Systems'
         copyright = ''
         menuMore = 'Show more'
         readMore = 'Read more'

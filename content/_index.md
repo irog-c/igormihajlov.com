@@ -14,4 +14,4 @@ A Software Engineer with experience across backend development, distributed syst
 
 Currently at **Comit International**, previously at **Playtronix**, **Tenderly**, and **LotusFlare**.
 
-Browse my [projects](/projects), read my [posts](/posts), or learn more [about me](/about).
+Browse my [side projects](/projects/), read my [blog posts](/posts/), or learn more [about my background](/about/).
