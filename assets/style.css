@@ -3,3 +3,7 @@
   --foreground: #eceae5;
   --accent: #32858b;
 }
+
+.menu__dropdown > li a {
+  white-space: nowrap;
+}
