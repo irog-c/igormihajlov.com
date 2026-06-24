@@ -1,0 +1,44 @@
+# Igor Mihajlov
+
+> Backend Engineer based in Belgrade, Serbia. 6+ years of experience building backend systems, microservices, and APIs in Go and TypeScript across fintech, Web3, gaming, and telecom domains. Open to new opportunities.
+
+## About
+
+- [About](https://igormihajlov.com/about/): Full background, technical skills, work experience, and education.
+- [Homepage](https://igormihajlov.com/): Overview and links to key sections.
+
+## Technical Skills
+
+- Languages: Go, TypeScript, C, C++, Python, Lua
+- Databases: PostgreSQL, Cassandra, ClickHouse, MongoDB
+- Infrastructure: Docker, Nginx, AWS, GCP, ArgoCD
+- Messaging: NSQ, NATS
+- Other: Git, Jenkins, OpenResty
+
+## Work Experience
+
+- **Backend Engineer** at Comit International (Mar 2025 – Present): TypeScript, NestJS, PostgreSQL, MongoDB, AWS. Projects include Vitals4Pets (veterinary health monitoring via wearables) and FairPlay Mobile (eSIM data plans).
+- **Backend Engineer — Finance Team** at Playtronix (Sep 2024 – Mar 2025): Go, bet processing microservice via NSQ, balance coordination via NATS, PostgreSQL for transactions, ClickHouse for analytics, ArgoCD GitOps deployment.
+- **Backend Engineer — VM Team** at Tenderly (Aug 2023 – Apr 2024): Go, Web3 development platform, EVM-compatible blockchain integration, transaction simulation, real-time blockchain indexing.
+- **Backend Engineer — Order Management Team** at LotusFlare (May 2022 – Aug 2023): Cloud-native BSS platform for telecom operators.
+- **Backend Engineer — Rewards Management Team** at LotusFlare (Oct 2019 – Oct 2020): Lua on OpenResty, Cassandra, Elasticsearch.
+
+## Education
+
+- Bachelor of Engineering, Computer Engineering — Union University (Računarski Fakultet), Belgrade, Serbia (2016 – 2025)
+
+## Blog Posts
+
+- [Deploying a Hugo Site with GitHub Actions, Docker Swarm, and Cloudflare](https://igormihajlov.com/posts/deploying-hugo-site-github-actions-docker-swarm/): Complete guide to automated Hugo deployment using GitHub Actions, Docker Swarm, GHCR, and Cloudflare SSL.
+- [Optimizing My Hugo Site: Performance, Security, and SEO](https://igormihajlov.com/posts/optimizing-hugo-site-performance-security-seo/): Nginx configuration, security headers, CSP, performance optimizations, and SEO fixes.
+
+## Projects
+
+- [Projects](https://igormihajlov.com/projects/): Side projects and open source work.
+
+## Contact
+
+- LinkedIn: https://linkedin.com/in/igor-mihajlov
+- GitHub: https://github.com/irog-c
+- Location: Belgrade, Serbia
+- Languages: Serbian (native), English (C1), German (A2)
